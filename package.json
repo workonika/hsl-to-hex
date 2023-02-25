@@ -1,9 +1,10 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@workonika/hsl-to-hex",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index555.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --cov test",
+    "lint": "npx standard"
   },
   "keywords": [],
   "author": "Kuzmin Anton",
@@ -16,5 +17,15 @@
     "url": "https://github.com/workonika/hsl-to-hex/issues"
   },
   "homepage": "https://github.com/workonika/hsl-to-hex#readme",
-  "description": ""
+  "description": "Convert HSL colors to RGB colors in hex format.\r ## Install\r ```sh\r npm install --save workonika/hsl-to-hex\r ```\r ## API\r ```\r require('hsl-to-hex') => Function",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "tap": "^16.3.4"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
